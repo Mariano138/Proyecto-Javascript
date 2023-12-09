@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Chelsea",
+    "raza": "Pitbull",
+    "edad": "5 meses",
+    "sexo": "Hembra",
+    "precio": "adopción",
+    "categoria": "animal",
+    "id": "perros"
+  },
+  {
+    "nombre": "Jimbo",
+    "raza": "Mestizo",
+    "edad": "1 año",
+    "sexo": "Macho",
+    "precio": "adopción",
+    "categoria": "animal",
+    "id": "perros"
+  },
+  {
+    "nombre": "Michifus",
+    "raza": "Mestizo",
+    "edad": "2 años",
+    "sexo": "Hembra",
+    "precio": "adopción",
+    "categoria": "animal",
+    "id": "gatos"
+  },
+  {
+    "nombre": "Miguel",
+    "raza": "Mestizo",
+    "edad": "2 año",
+    "sexo": "Macho",
+    "precio": "adopción",
+    "categoria": "animal",
+    "id": "gatos"
+  }
+]

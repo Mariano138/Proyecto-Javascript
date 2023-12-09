@@ -1,6 +1,5 @@
 //////////// Clase 1 /////////
 
-
 // let nombre = "CHELCHI";
 
 // console.log(nombre);
@@ -45,10 +44,6 @@
 
 // alert("resultado de su multiplicacion es " + resultado)
 
-
-
-
-
 //////////// CLASE 2 ////////////////////
 
 // let numero = 4;
@@ -57,7 +52,7 @@
 //     console.log("Es verdadero");
 // }
 
-// if(numero == 5){ 
+// if(numero == 5){
 //     console.log("es falso");
 // }
 
@@ -138,7 +133,6 @@
 //     console.log("falso");
 // }
 
-
 // let usuario1 = "Michi";
 // let usuario2 = "Chelchi";
 
@@ -165,7 +159,6 @@
 //     console.log(numeroIngresado + " X " + i + " = " + resultado);
 // }
 
-
 // for (i = 1; i <= 5; i++) {
 //     let nombre = prompt("Porfavor Ingrese su nombre");
 //     console.log(" Turno  N° "+i+" Nombre: "+nombre);
@@ -184,13 +177,12 @@
 
 //WHILE
 
-
 // let dato = prompt("Porfavor ingrese un dato.")
 
 // while ( dato != "ESC") {
 //    console.log("el usuario ingreso " + dato);
 //    dato = prompt("Dato")
-    
+
 // }
 
 // DO...WHILE
@@ -235,8 +227,7 @@
 //     nombre = prompt("Ingrese su nombre");
 // }
 
-// desafio 
-
+// desafio
 
 // let numeroIngresado = parseInt(prompt("Ingrese un numero"));
 // for(i = 1; i < 10; i++){
@@ -244,7 +235,6 @@
 //     console.log(resultado);
 
 // }
-
 
 // let nombre = prompt("Nombre")
 
@@ -272,9 +262,7 @@
 // pedirNombre();
 // pedirNombre();
 
-
 ////Parametros///
-
 
 // function parametros(parametro1, parametro2) {
 //     console.log(parametro1 + " " + parametro2);
@@ -282,7 +270,6 @@
 
 // parametros("Hola", "Michi");
 // parametros("Hola", "ELIS");
-
 
 //////// Ejemplo con sumar y mostrar /////////
 
@@ -302,7 +289,6 @@
 // mostrar(resultado);
 
 //// RETURN ////
-
 
 // //creo mi funcion de sumar
 // function sumar(numero1, numero2){
@@ -353,7 +339,6 @@
 // console.log(sumar(10, 10))
 // console.log(restar(10, 10))
 
-
 //FUNCIONES ANONIMAS//
 
 // const suma = function(a, b) {return a+b }
@@ -361,7 +346,6 @@
 
 // console.log(suma(10, 10));
 // console.log(resta(10, 10));
-
 
 //FUNCIONES FLECHA//
 
@@ -382,15 +366,13 @@
 
 // console.log(resta(suma(precioProducto, IVA(precioProducto)), descuento));
 
-
-
 ///////CLASE 5 Objetos///////////
 
 // const persona1 = {
 //     nombre: "homero",
 //     edad: 39,
 //     direccion: "Av Siempreviva"
-// } 
+// }
 
 // // console.log(persona1.nombre);
 // // console.log(persona1.edad);
@@ -414,14 +396,11 @@
 // console.log(homero);
 // console.log(marge);
 
-
 ///METODOS
 
 // let saludo = "Hola coders"
 
 // console.log(saludo.toUpperCase());
-
-
 
 // function persona(nombre, edad, calle){
 //     this.nombre = nombre;
@@ -441,7 +420,6 @@
 // for (const propiedad in persona){
 //     console.log(persona[propiedad]);
 // }
-
 
 // class persona{
 //     constructor(nombre, edad,calle){
@@ -478,7 +456,6 @@
 
 // producto1.IVA()
 // producto1.vender()
-
 
 /////////////// ARRAYS ///////////////////
 
@@ -539,7 +516,6 @@
 
 //array.shift();
 
-
 //Splice para eliminar objetos de mi array en cualquier parte, pasamos como primer parametro la posicion desde la que queremos eliminar y como segundo parametro hasta donde queremos eliminar
 
 //array.splice(0, 3);
@@ -593,13 +569,10 @@
 
 // alert(nuevalista.join("..."));
 
-
 //eliminar elementos de un array
-
 
 //creo mi array
 //const nombres = ["Chelchi", "Michi", "Elis"]
-
 
 // //funcion que busca el index en el array y elimina
 // const eliminar = nombre => {
@@ -614,7 +587,6 @@
 // //llamo a la funcion
 // eliminar()
 
-
 // objetos y arrays conbinados
 
 // const objeto1 = {nombre: "Arroz"}
@@ -625,7 +597,7 @@
 
 // Sentencia for of para recorrer un array
 //creo mi array
-// const productos = [ 
+// const productos = [
 //     {Nombre: "Arroz", id: 1},
 //     {Nombre: "Fideos", id: 2},
 //     {Nombre: "Porotos", id: 3},
@@ -637,7 +609,6 @@
 // }
 
 // constructor para productos
-
 
 // class producto {
 //     constructor(nombre, precio){
@@ -664,10 +635,7 @@
 
 // console.log(productos);
 
-
-
 ////////////////////// FUNCIONES DE ORDEN SUPERIOR ////////////////
-
 
 // function mayorQue(m){
 //     return n => m < n;
@@ -676,7 +644,6 @@
 // let mayorQueDiez = mayorQue(10);
 
 // console.log(mayorQueDiez(9));
-
 
 ///
 
@@ -705,7 +672,6 @@
 // }
 
 //recorrerArray(numeros, console.log)
-
 
 // let total = 0;
 
@@ -747,7 +713,7 @@
 //         categoria:"conejos",
 //         precio:1500
 //     },
-//     {    
+//     {
 //         nombre: "Tiron de huevos",
 //         id: 3,
 //         categoria:"michis",
@@ -778,7 +744,7 @@
 // console.log(nombres);
 
 // const actualizar = animales.map((x)=>{
-//     return { 
+//     return {
 //     nombre: x.nombre,
 //     precio: x.precio * 1.25
 // }
@@ -897,7 +863,6 @@
 // console.log(hoy.toLocaleDateString());
 // console.log(hoy.toLocaleTimeString());
 
-
 ////////////// DOM //////////////
 
 // //ELEMENT BY ID
@@ -952,7 +917,6 @@
 // let div2 = document.createElement("div")
 
 // div2.innerHTML = "<h2>Hola Michis</h2>"
-
 
 // document.body.append(div2);
 
@@ -1023,3 +987,305 @@
 
 // console.log(container);
 
+// const animales = [];
+
+// const cantidad = 4;
+
+// do{
+//     let entrada = prompt("Ingrese el nombre de su bicho");
+//     animales.push(entrada)
+//     console.log(animales);
+// } while(animales.length < cantidad)
+
+// const nombres = ["Juan", "María", "Carlos", "Laura", "Pedro"]
+
+// const eliminar = () => {
+//     let entrada = prompt("Ingrese el nombre a eliminar")
+//     if(nombres.includes(entrada)){
+//         let index = nombres.indexOf(entrada);
+//         nombres.splice(index, 1)
+//         console.log(nombres);
+
+//     } else {
+//         console.log("El nombre Ingresado no existe");
+//     }
+// }
+
+// eliminar();
+
+// class producto{
+//     constructor(nombre, precio) {
+//         this.nombre = nombre.toUpperCase();
+//         this.precio = parseFloat(precio);
+//         this.vendido = false;
+//     }
+//     sumarIva(){this.precio = this.precio * 1.25};
+// }
+
+// const productos = [];
+
+// productos.push(new producto ("arroz", "150"));
+// productos.push(new producto ("fideos", "250"));
+// productos.push(new producto ("lentejas", "200"));
+
+// for(const x of productos) {
+//     x.sumarIva();
+//     console.log(productos);
+// }
+
+// console.log(productos);
+
+// function operacion (op) {
+//     if (op == "sumar"){
+//         return (a ,b) => a + b;
+//     } else if (op == "restar") {
+//         return (a ,b) => a - b;
+//     } else {
+//         console.log("Op invalida");
+//     }
+// }
+
+// let suma = operacion("sumar");
+// let resta = operacion("restar");
+
+// console.log(suma(5, 10));
+// console.log(resta(10, 5));
+
+// const animales = [
+//     {nombre:"AJompita", precio:3000, edad: "1 mes"},
+//     {nombre:"BMichifus", precio:5000, edad: "12 meses"},
+//     {nombre:"CChelchea", precio:50000, edad: "5 meses"}
+// ];
+
+// let resultado = animales.find((x) => x.nombre == "Jompita");
+
+// console.log(resultado);
+
+// let resultado2 = animales.filter((x) => x.precio < 6000);
+
+// console.log(resultado2);
+
+// let resultado3 = animales.some((x) => x.nombre === "Chelchea")
+
+// console.log(resultado3);
+
+// let resultado4 = animales.map((x) => {
+//     return {
+//         nombre: x.nombre,
+//         precio: x.precio * 1.50
+//     }
+// })
+
+// console.log(resultado4);
+
+// let resultado5 = animales.reduce((acumulador, x) => acumulador + x.precio, 0)
+
+// console.log(resultado5);
+
+// let resultado6 = animales.sort((a , b) => {
+//     if(a.nombre < b.nombre){
+//         return 1;
+//     }
+
+// });
+
+// console.log(resultado6);
+
+// const generadorNumero = () => {
+//     return Math.round(Math.random() * 100)
+// }
+
+// console.log(generadorNumero());
+
+//DOOOOM
+
+// const paises = document.getElementsByClassName("paises");
+
+// for(const pais of paises) {
+//     console.log(pais.innerHTML);
+// }
+
+// paises.innerText = "Hola Mundo";
+
+// console.log(paises.innerText);
+
+// const miContainer = document.getElementById("contenedor");
+
+// miContainer.innerHTML = `<h2>Hola mundo</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>`
+
+// miContainer.className = "bg-white"
+
+// const nombre = document.getElementById("nombre");
+// const edad = document.getElementById("edad");
+
+// nombre.onkeydown = () => {
+//   console.log("keeydown");
+// };
+
+// edad.onkeyup = () => {
+//   console.log("key up");
+// };
+
+// nombre.onchange = () => {
+//   console.log("cambio");
+// };
+
+// nombre.addEventListener("input", escribiendo);
+
+// function escribiendo() {
+//   console.log("Hola mundo!");
+// }
+
+// const formulario = document.getElementById("miForm");
+// formulario.addEventListener("submit", enviar);
+
+// function enviar(e) {
+//   e.preventDefault;
+//   let formulario = e.target;
+//   console.log(formulario.children[0].value);
+//   console.log(formulario.children[1].value);
+// }
+
+// const botoncito = document.getElementById("boton");
+// const body = document.body;
+// botoncito.addEventListener("click", cambiarModo);
+
+// function cambiarModo() {
+//   body.classList.toggle("dark-mode");
+//   if (body.classList.contains("dark-mode")) {
+//     botoncito.innerText = "Cambiar a Light Mode";
+//   } else {
+//     botoncito.innerText = "Cambiar Dark Mode";
+//   }
+// }
+
+// const miInput = document.getElementById("miInput");
+// const textoAbajo = document.getElementById("texto-abajo");
+
+// miInput.addEventListener("change", cuandoEscribo);
+
+// function cuandoEscribo(e) {
+//   e.preventDefault();
+//   textoAbajo.innerText = miInput.value;
+// }
+
+// const botoncito = document.getElementById("boton");
+// const form = document.getElementById("mi-form");
+// const texto = document.getElementById("texto");
+
+// botoncito.addEventListener("click", agregar);
+
+// function agregar(e) {
+//   e.preventDefault();
+//   if (texto.value != "") {
+//     let li = document.createElement("li");
+//     li.innerText = texto.value;
+//     li.classList.add("bg-primary");
+//     form.appendChild(li);
+//   } else {
+//     console.log("Escriba algo porfavor");
+//   }
+//   form.reset();
+//   texto.focus();
+// }
+
+// sessionStorage.setItem("bienvenida", "Hola Mundo!");
+// sessionStorage.setItem("numeros", [1, 2, 3, 4, 5]);
+
+// for (let i = 0; i < sessionStorage.length; i++) {
+//   let clave = sessionStorage.key(i);
+//   let llave = sessionStorage.getItem(clave);
+//   console.log("clave: " + clave);
+//   console.log("valor: " + llave);
+// }
+
+// sessionStorage.removeItem("bienvenida");
+// sessionStorage.removeItem("numeros");
+
+// sessionStorage.clear();
+
+// console.log(sessionStorage.getItem("bienvenida"));
+// console.log(sessionStorage.getItem("numeros"));
+
+// const personas = [
+//   { id: 1, nombre: "Homero", edad: 38 },
+//   { id: 2, nombre: "Marge", edad: 36 },
+//   { id: 3, nombre: "Bart", edad: 10 },
+//   { id: 4, nombre: "Lisa", edad: 8 },
+//   { id: 5, nombre: "Maggie", edad: 4 },
+// ];
+
+// const agregar = (a, b) => {
+//   localStorage.setItem(a, b);
+// };
+
+// agregar("listaPersonas", JSON.stringify(personas));
+
+// class objPersonajes {
+//   constructor(obj) {
+//     this.nombre = obj.nombre.toUpperCase();
+//     this.edad = obj.edad;
+//   }
+//   sumarEdad() {
+//     this.edad = this.edad + 1;
+//   }
+// }
+
+// const miembros = JSON.parse(localStorage.getItem("listaPersonas"));
+
+// const personajes = [];
+
+// for (const persona of personas) {
+//   personajes.push(new objPersonajes(persona));
+// }
+
+// console.log(personajes);
+
+// const container = document.getElementById("personas");
+
+// for (const persona of personajes) {
+//   let li = document.createElement("li");
+//   li.innerHTML = persona.nombre;
+//   container.appendChild(li);
+// }
+
+// let informacionUsuario = prompt("Información a almacenar");
+
+// localStorage.setItem(`informacio`, informacionUsuario);
+
+// let informacionAlmacenada = localStorage.getItem(`informacio`);
+
+// console.log(informacionAlmacenada);
+
+//DAAAAAAAAAAAAAAAAAAAAAAAAARKKKKKKKKKKKKKK MODEEEEEEEEEEEEEE
+
+// const botoncito = document.getElementById("boton");
+// const cuerpo = document.body;
+// let darkMode = localStorage.getItem("dark-mode");
+
+// function activarDark() {
+//   localStorage.setItem("dark-mode", "activado");
+//   cuerpo.classList.add("dark-mode");
+//   botoncito.innerText = "activar light mode";
+// }
+
+// function desactivarDark() {
+//   localStorage.setItem("dark-mode", "desactivado");
+//   cuerpo.classList.remove("dark-mode");
+//   botoncito.innerText = "activar dark mode";
+// }
+
+// if (darkMode === "activado") {
+//   activarDark();
+// } else {
+//   desactivarDark();
+// }
+// botoncito.addEventListener("click", () => {
+//   darkMode = localStorage.getItem("dark-mode");
+//   if (darkMode === "activado") {
+//     desactivarDark();
+//   } else {
+//     activarDark();
+//   }
+// });
