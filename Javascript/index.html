@@ -76,6 +76,7 @@
         </div>
       </div>
     </nav>
+
     <!-- Searchbar -->
     <div class="container pt-2">
       <div class="row justify-content-center">
@@ -94,6 +95,7 @@
         </div>
       </div>
     </div>
+
     <!-- Carrusel -->
     <div
       id="carouselExampleAutoplaying"
@@ -140,6 +142,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
     <!-- Title -->
     <div class="container-fluid">
       <h1
@@ -148,10 +151,13 @@
         Animales y productos
       </h1>
     </div>
+
     <!-- Animales -->
     <div class="container animalesBG">
       <div class="row">
-        <div class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div
+        id="perros" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal"
+        >
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -162,14 +168,16 @@
           /></a>
           <div class="card-img-overlay">
             <h5
-              class="fs-6 text-center position-absolute bottom-0 end-0 w-50 rounded-pill bg-dark"
+             class="fs-6 text-center position-absolute bottom-0 end-0 w-50 rounded-pill bg-dark"
             >
               Perros
             </h5>
           </div>
         </div>
 
-        <div class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div
+        id="gatos" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal"
+        >
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -187,7 +195,7 @@
           </div>
         </div>
 
-        <div class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div id="conejos" class="col-6 pb-2 card border-0 text-white animalesBG">
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -205,7 +213,7 @@
           </div>
         </div>
 
-        <div class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div id="pollos" class="col-6 pb-2 card border-0 text-white animalesBG">
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -223,7 +231,7 @@
           </div>
         </div>
 
-        <div class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div id="cerdos" class="col-6 pb-2 card border-0 text-white animalesBG">
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -241,7 +249,7 @@
           </div>
         </div>
 
-        <div class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div id="peces" class="col-6 pb-2 card border-0 text-white animalesBG">
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -260,79 +268,29 @@
         </div>
       </div>
     </div>
-    <!-- Productos -->
-    <div class="container bg-white-5">
-      <div class="row">
+
+    <!-- //////////Productos/////////// -->
+    <div class="container">
+      
+      <div class="row border border-5 p-1 mx-1 rounded bg-white">
         <div class="col-12 d-flex justify-content-between text-white">
-          <p class="bg-dark p-2 rounded border border-2">Todo</p>
-          <p class="bg-dark p-2 rounded border border-2">Animales</p>
-          <p class="bg-dark p-2 rounded border border-2">Alimentos</p>
-          <p class="bg-dark p-2 rounded border border-2">Cuchas</p>
-        </div>
-      </div>
-      <div class="card px-2 gap-2">
-        <!-- 1ra card -->
-        <div
-          class="row border border-5 border-dark rounded w-100 align-self-center"
-        >
-          <div class="col-4 align-self-center">
-            <img
-              src="./img/rabbit-venta.jpg"
-              alt="conejo marron"
-              class="img-fluid rounded align-middle"
-            />
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">Conejo macho 2 meses</h5>
-              <p class="card-text fs-4">
-                Precio: <button class="btn btn-dark">$2500</button>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- 2da card -->
-        <div
-          class="row border border-5 border-dark rounded w-100 align-self-center"
-        >
-          <div class="col-4 align-self-center">
-            <img
-              src="./img/rabbit-venta.jpg"
-              alt="conejo marron"
-              class="img-fluid rounded align-middle"
-            />
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">Conejo macho 2 meses</h5>
-              <p class="card-text fs-4">
-                Precio: <button class="btn btn-dark">$2500</button>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- 3ra card -->
-        <div
-          class="row border border-5 border-dark rounded w-100 align-self-center"
-        >
-          <div class="col-4 align-self-center">
-            <img
-              src="./img/rabbit-venta.jpg"
-              alt="conejo marron"
-              class="img-fluid rounded align-middle"
-            />
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">Conejo macho 2 meses</h5>
-              <p class="card-text fs-4">
-                Precio: <button class="btn btn-dark">$2500</button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+          <p id="todo" class="bg-dark p-2 rounded border border-2 boton-categoria">Todo</p>
+          <p id="animal" class="bg-dark p-2 rounded border border-2 boton-categoria">
+            Animales
+          </p>
+          <p id="alimento" class="bg-dark p-2 rounded border border-2 boton-categoria">
+            Alimentos
+          </p>
+          <p id="cucha" class="bg-dark p-2 rounded border border-2 boton-categoria">Cuchas</p>
+        </div> 
+        
+        <!-- CARD -->
+        
+        <div id="card"></div>
+
     </div>
+
+    <!-- /////////FOOTEER////////// -->
     <footer>
       <div class="container bg-light mt-5">
         <div class="row">
@@ -368,7 +326,9 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <p class="text-center pt-3">La Madriguera todos los derechos reservados. 2023</p>
+          <p class="text-center pt-3">
+            La Madriguera todos los derechos reservados. 2023
+          </p>
         </div>
       </div>
     </footer>
