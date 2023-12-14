@@ -32,7 +32,7 @@
         <div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a>
+              <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i>Carrito</a>
             </li>
           </ul>
         </div>
@@ -156,7 +156,7 @@
     <div class="container animalesBG">
       <div class="row">
         <div
-        id="perros" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal"
+        id="perro" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal"
         >
           <a href="#"
             ><img
@@ -176,7 +176,7 @@
         </div>
 
         <div
-        id="gatos" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal"
+        id="gato" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal"
         >
           <a href="#"
             ><img
@@ -195,7 +195,7 @@
           </div>
         </div>
 
-        <div id="conejos" class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div id="conejo" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal">
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -213,7 +213,7 @@
           </div>
         </div>
 
-        <div id="pollos" class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div id="pollo" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal">
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -231,7 +231,7 @@
           </div>
         </div>
 
-        <div id="cerdos" class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div id="cerdo" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal">
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -249,7 +249,7 @@
           </div>
         </div>
 
-        <div id="peces" class="col-6 pb-2 card border-0 text-white animalesBG">
+        <div id="pez" class="col-6 pb-2 card border-0 text-white animalesBG boton-animal">
           <a href="#"
             ><img
               class="img-fluid card-img object-fit-cover border border-white rounded border-5"
@@ -274,14 +274,14 @@
       
       <div class="row border border-5 p-1 mx-1 rounded bg-white">
         <div class="col-12 d-flex justify-content-between text-white">
-          <p id="todo" class="bg-dark p-2 rounded border border-2 boton-categoria">Todo</p>
-          <p id="animal" class="bg-dark p-2 rounded border border-2 boton-categoria">
+          <p id="todo" data-subcategoria="todo" class="bg-dark p-2 rounded border border-2 boton-categoria">Todo</p>
+          <p id="animal" data-subcategoria="animal" class="bg-dark p-2 rounded border border-2 boton-categoria">
             Animales
           </p>
-          <p id="alimento" class="bg-dark p-2 rounded border border-2 boton-categoria">
+          <p id="alimento" data-subcategoria="alimento" class="bg-dark p-2 rounded border border-2 boton-categoria">
             Alimentos
           </p>
-          <p id="cucha" class="bg-dark p-2 rounded border border-2 boton-categoria">Cuchas</p>
+          <p id="cucha" data-subcategoria="cucha" class="bg-dark p-2 rounded border border-2 boton-categoria">Cuchas</p>
         </div> 
         
         <!-- CARD -->
@@ -343,6 +343,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/main.js"></script>
-    <script src="./js/test.js"></script>
+    <script src="./js/carrito.js"></script>
   </body>
 </html>

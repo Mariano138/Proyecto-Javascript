@@ -14,6 +14,8 @@ fetch("./js/productos.json")
         edad: x.edad,
         sexo: x.sexo,
         categoria: x.categoria,
+        todo: x.todo,
+        subcategoria: x.subcategoria,
         precio: x.precio,
         id: x.id,
       });
@@ -59,16 +61,18 @@ cargarProductos(productoEnLs);
 
 //Funcionalidad de mis botones (perros,gatos,etc)
 
+let subcategoriaSeleccionada = "";
+
 botonAnimal.forEach((boton) => {
   boton.addEventListener("click", (e) => {
-    botonAnimal.forEach((boton) => boton.classList.remove("activo"));
+    botonAnimal.forEach((b) => b.classList.remove("activo"));
     e.currentTarget.classList.add("activo");
 
-    if (e.currentTarget != " ") {
-      cards.innerHTML = ``;
-      const producto = productos.filter((x) => x.id == e.currentTarget.id);
-      cargarProductos(producto);
-    }
+    subcategoriaSeleccionada = e.currentTarget.id;
+    const productosFiltrados = productoEnLs.filter(
+      (x) => x.id == subcategoriaSeleccionada
+    );
+    cargarProductos(productosFiltrados);
   });
 });
 
@@ -76,7 +80,27 @@ botonAnimal.forEach((boton) => {
 
 botonCategoria.forEach((boton) => {
   boton.addEventListener("click", (e) => {
-    botonCategoria.forEach((boton) => boton.classList.remove("activado"));
+    botonCategoria.forEach((b) => b.classList.remove("activado"));
     e.currentTarget.classList.add("activado");
+    cards.innerHTML = "";
+
+    const categoriaSeleccionada = e.currentTarget.id;
+
+    if (categoriaSeleccionada != "todo") {
+      const productosFiltrados = productoEnLs.filter(
+        (x) =>
+          x.categoria == categoriaSeleccionada &&
+          x.subcategoria == subcategoriaSeleccionada
+      );
+
+      cargarProductos(productosFiltrados);
+    } else {
+      const todo = productoEnLs.filter(
+        (x) =>
+          x.todo == categoriaSeleccionada &&
+          x.subcategoria == subcategoriaSeleccionada
+      );
+      cargarProductos(todo);
+    }
   });
 });
