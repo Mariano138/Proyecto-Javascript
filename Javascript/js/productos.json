@@ -5,11 +5,12 @@
     "edad": "2 meses",
     "sexo": "Hembra",
     "img": "https://images.pexels.com/photos/9182005/pexels-photo-9182005.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "precio": "adopción",
+    "precio": 50000,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "perro",
-    "id": "perros"
+    "id": "1"
   },
   {
     "nombre": "Jimbo",
@@ -17,11 +18,12 @@
     "edad": "1 año",
     "sexo": "Macho",
     "img": "https://images.pexels.com/photos/7755249/pexels-photo-7755249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "adopción",
+    "precio": 1500,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "perro",
-    "id": "perros"
+    "id": "2"
   },
   {
     "nombre": "Michifus",
@@ -29,11 +31,12 @@
     "edad": "2 años",
     "sexo": "Hembra",
     "img": "https://images.pexels.com/photos/18040448/pexels-photo-18040448/free-photo-of-jardin-exterior-mascota-mono.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "adopción",
+    "precio": 20000,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "gato",
-    "id": "gatos"
+    "id": "3"
   },
   {
     "nombre": "Miguel",
@@ -41,11 +44,12 @@
     "edad": "2 año",
     "sexo": "Macho",
     "img": "https://images.pexels.com/photos/11286981/pexels-photo-11286981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "adopción",
+    "precio": 20000,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "gato",
-    "id": "gatos"
+    "id": "4"
   },
   {
     "nombre": "Lechón",
@@ -53,11 +57,12 @@
     "edad": "---",
     "sexo": "Macho",
     "img": "https://images.pexels.com/photos/6467935/pexels-photo-6467935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$10000",
+    "precio": 10000,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "cerdo",
-    "id": "cerdos"
+    "id": "5"
   },
   {
     "nombre": "Lechón",
@@ -65,11 +70,12 @@
     "edad": "---",
     "sexo": "Hembra",
     "img": "https://images.pexels.com/photos/110820/pexels-photo-110820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$15000",
+    "precio": 15000,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "cerdo",
-    "id": "cerdos"
+    "id": "6"
   },
   {
     "nombre": "Pez payaso",
@@ -77,11 +83,12 @@
     "edad": "---",
     "sexo": "Macho",
     "img": "https://images.pexels.com/photos/3234841/pexels-photo-3234841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$5000",
+    "precio": 5000,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "pez",
-    "id": "peces"
+    "id": "7"
   },
   {
     "nombre": "Pez cirujano azul",
@@ -89,11 +96,12 @@
     "edad": "---",
     "sexo": "Hembra",
     "img": "https://images.pexels.com/photos/12861721/pexels-photo-12861721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$5000",
+    "precio": 5000,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "pez",
-    "id": "peces"
+    "id": "8"
   },
   {
     "nombre": "Conejo Mini lop",
@@ -101,11 +109,12 @@
     "edad": "1 mes",
     "sexo": "Macho",
     "img": "https://images.pexels.com/photos/10595520/pexels-photo-10595520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$2500",
+    "precio": 2500,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "conejo",
-    "id": "conejos"
+    "id": "9"
   },
   {
     "nombre": "Conejo cabeza de león",
@@ -113,11 +122,12 @@
     "edad": "1 mes",
     "sexo": "Hembra",
     "img": "https://images.pexels.com/photos/4492260/pexels-photo-4492260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$2500",
+    "precio": 2500,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "conejo",
-    "id": "conejos"
+    "id": "10"
   },
   {
     "nombre": "Gallo",
@@ -125,11 +135,12 @@
     "edad": "---",
     "sexo": "Macho",
     "img": "https://images.pexels.com/photos/458825/pexels-photo-458825.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "precio": "$1500",
+    "precio": 1500,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "pollo",
-    "id": "pollos"
+    "id": "11"
   },
   {
     "nombre": "Gallina",
@@ -137,11 +148,12 @@
     "edad": "---",
     "sexo": "Hembra",
     "img": "https://images.pexels.com/photos/1405930/pexels-photo-1405930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$1500",
+    "precio": 1500,
     "todo": "todo",
     "categoria": "animal",
+    "cantidad": 1,
     "subcategoria": "pollo",
-    "id": "pollos"
+    "id": "12"
   },
   {
     "nombre": "Cucha para perro",
@@ -149,11 +161,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://images.pexels.com/photos/2248516/pexels-photo-2248516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$2500",
+    "precio": 2500,
     "todo": "todo",
     "categoria": "cucha",
+    "cantidad": 1,
     "subcategoria": "perro",
-    "id": "cuchas"
+    "id": "13"
   },
   {
     "nombre": "Cucha para perro (pareja)",
@@ -161,11 +174,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://images.pexels.com/photos/12241389/pexels-photo-12241389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$5000",
+    "precio": 5000,
     "todo": "todo",
     "categoria": "cucha",
+    "cantidad": 1,
     "subcategoria": "perro",
-    "id": "cuchas"
+    "id": "14"
   },
   {
     "nombre": "Cucha para gatos",
@@ -173,11 +187,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://images.pexels.com/photos/7726310/pexels-photo-7726310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$10000",
+    "precio": 10000,
     "todo": "todo",
     "categoria": "cucha",
+    "cantidad": 1,
     "subcategoria": "gato",
-    "id": "cuchas"
+    "id": "15"
   },
   {
     "nombre": "Cucha para gato",
@@ -185,11 +200,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://images.pexels.com/photos/7726003/pexels-photo-7726003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$5000",
+    "precio": 5000,
     "todo": "todo",
     "categoria": "cucha",
+    "cantidad": 1,
     "subcategoria": "gato",
-    "id": "cuchas"
+    "id": "16"
   },
   {
     "nombre": "Pecera",
@@ -197,11 +213,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://images.pexels.com/photos/12660120/pexels-photo-12660120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$10000",
+    "precio": 10000,
     "todo": "todo",
     "categoria": "cucha",
+    "cantidad": 1,
     "subcategoria": "pez",
-    "id": "cuchas"
+    "id": "17"
   },
   {
     "nombre": "Pecera 150cm x 60cm",
@@ -209,11 +226,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://images.pexels.com/photos/11267182/pexels-photo-11267182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$20000",
+    "precio": 20000,
     "todo": "todo",
     "categoria": "cucha",
+    "cantidad": 1,
     "subcategoria": "pez",
-    "id": "cuchas"
+    "id": "18"
   },
   {
     "nombre": "Jaula de conejo",
@@ -221,11 +239,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://images.pexels.com/photos/10988279/pexels-photo-10988279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$5500",
+    "precio": 5500,
     "todo": "todo",
     "categoria": "cucha",
+    "cantidad": 1,
     "subcategoria": "conejo",
-    "id": "cuchas"
+    "id": "19"
   },
   {
     "nombre": "Cucha de conejo",
@@ -233,11 +252,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://images.pexels.com/photos/17829768/pexels-photo-17829768/free-photo-of-jaula-fotografia-de-animales-ganado-reja.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "precio": "$8500",
+    "precio": 8500,
     "todo": "todo",
     "categoria": "cucha",
+    "cantidad": 1,
     "subcategoria": "conejo",
-    "id": "cuchas"
+    "id": "20"
   },
   {
     "nombre": "Alimento para perro 15kg",
@@ -245,11 +265,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://mendoza.pluspet.com.ar/cdn/shop/files/alimento-voraz-perro-adulto-01.jpg?v=1701962419&width=1000",
-    "precio": "$11000",
+    "precio": 11000,
     "todo": "todo",
     "categoria": "alimento",
+    "cantidad": 1,
     "subcategoria": "perro",
-    "id": "alimentos"
+    "id": "21"
   },
   {
     "nombre": "Alimento para perro 10kg",
@@ -257,11 +278,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://mendoza.pluspet.com.ar/cdn/shop/products/purina-dog-chow-adulto-raza-mediana-y-grande-sin-colorantes_679b9413-7c2d-4504-b337-6ae608d9d38d.png?v=1656426747&width=600",
-    "precio": "$8000",
+    "precio": 8000,
     "todo": "todo",
     "categoria": "alimento",
+    "cantidad": 1,
     "subcategoria": "perro",
-    "id": "alimentos"
+    "id": "22"
   },
   {
     "nombre": "Alimento para gato 3kg",
@@ -269,23 +291,25 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://http2.mlstatic.com/D_NQ_NP_875602-MLA46470591594_062021-O.webp",
-    "precio": "$5000",
+    "precio": 5000,
     "todo": "todo",
     "categoria": "alimento",
+    "cantidad": 1,
     "subcategoria": "gato",
-    "id": "alimentos"
+    "id": "23"
   },
   {
     "nombre": "Alimento para gato 1kg",
     "raza": "---",
     "edad": "---",
     "sexo": "---",
-    "img": "https://mendoza.pluspet.com.ar/cdn/shop/products/alimento-gato-adulto-purina-cat-chow-pescado-y-pollo.png?v=1651175845&width=380",
-    "precio": "$2500",
+    "img": "https://toquipetshop.com.ar/wp-content/uploads/2022/10/CatPro-Kitten-7-5-kgrs.png",
+    "precio": 2500,
     "todo": "todo",
     "categoria": "alimento",
+    "cantidad": 1,
     "subcategoria": "gato",
-    "id": "alimentos"
+    "id": "24"
   },
   {
     "nombre": "Alimento para conejo 10kg",
@@ -293,11 +317,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://http2.mlstatic.com/D_NQ_NP_2X_816420-MLA51574662469_092022-F.webp",
-    "precio": "$6000",
+    "precio": 6000,
     "todo": "todo",
     "categoria": "alimento",
+    "cantidad": 1,
     "subcategoria": "conejo",
-    "id": "alimentos"
+    "id": "25"
   },
   {
     "nombre": "Alimento para pollos 10kg",
@@ -305,11 +330,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://http2.mlstatic.com/D_NQ_NP_904858-MLA71109541206_082023-O.webp",
-    "precio": "$5000",
+    "precio": 5000,
     "todo": "todo",
     "categoria": "alimento",
+    "cantidad": 1,
     "subcategoria": "pollo",
-    "id": "alimentos"
+    "id": "26"
   },
   {
     "nombre": "Alimento para cerdos",
@@ -317,11 +343,12 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://www.vitabull.com.ar/wp-content/uploads/2020/09/bolsa-de-alimento-para-cerdos-vitabull-559x1024.jpg",
-    "precio": "$10000",
+    "precio": 10000,
     "todo": "todo",
     "categoria": "alimento",
+    "cantidad": 1,
     "subcategoria": "cerdo",
-    "id": "alimentos"
+    "id": "27"
   },
   {
     "nombre": "Alimento para peces",
@@ -329,10 +356,11 @@
     "edad": "---",
     "sexo": "---",
     "img": "https://http2.mlstatic.com/D_NQ_NP_615101-MLA41534813425_042020-O.webp",
-    "precio": "$8000",
+    "precio": 8000,
     "todo": "todo",
     "categoria": "alimento",
+    "cantidad": 1,
     "subcategoria": "pez",
-    "id": "alimentos"
+    "id": "28"
   }
 ]

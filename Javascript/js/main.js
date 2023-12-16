@@ -1,6 +1,8 @@
 // Array para guardar mis productos
 
 const productos = [];
+let productosEnCarrito =
+  JSON.parse(localStorage.getItem("productosEnCarrito")) || [];
 
 //Llmado de mi Json
 
@@ -14,6 +16,7 @@ fetch("./js/productos.json")
         edad: x.edad,
         sexo: x.sexo,
         categoria: x.categoria,
+        cantidad: x.cantidad,
         todo: x.todo,
         subcategoria: x.subcategoria,
         precio: x.precio,
@@ -25,36 +28,36 @@ fetch("./js/productos.json")
 const productoEnLs = JSON.parse(localStorage.getItem("productos"));
 
 //Manejo de DOOOOM
-const cards = document.getElementById("card");
+const cards = document.getElementById("card-body");
 const botonAnimal = document.querySelectorAll(".boton-animal");
 const botonCategoria = document.querySelectorAll(".boton-categoria");
+let agregarAlCarrito = document.querySelectorAll(".agregar-carrito");
+const numeroCarrito = document.getElementById("numero-carrito");
+
+// BOTONES DE AÑADIR AL CARRITO
+
+function actualizarBotones() {
+  agregarAlCarrito = document.querySelectorAll(".agregar-carrito");
+  agregarAlCarrito.forEach((botonAgregar) => {
+    botonAgregar.addEventListener("click", agregar);
+  });
+}
 
 //Function de cargar productos
 
 function cargarProductos(productosElegidos) {
   productosElegidos.forEach((x) => {
     let div = document.createElement("div");
-    div.classList = "py-2 d-flex justify-content-center";
-    div.innerHTML = `<div id="card" class="row border border-2 border-grey rounded w-100 p-2 align-self-center">
-               <div id="card-img" class="col-4 align-self-center">
-               <img src="${x.img}" class="img-fluid rounded align-middle"/>
-               </div>
-               <div class="col-8 d-flex justify-content-center text-center">
-               <div id="card-body" class="card-body">
-                  <h5 class="card-title fw-bolder fs-4">${x.nombre}</h5>
-                 <div class="col-12 d-flex gap-3 fw-bold">
-                   <p>Edad: ${x.edad}</p>
-                   <p>Sexo: ${x.sexo}</p>
-                 </div>
-                 <p class="card-text fs-5 fw-bold">
-                   Precio: <button class="btn btn-dark">${x.precio}</button>
-                  </p>
-               </div>
-              </div>
-              </div>
-              </div>`;
+    div.classList =
+      "col-5 col-md-4 col-lg-3 text-center border border-5 rounded-4 p-2 bg-dark text-white";
+    div.innerHTML = `<img src="${x.img}" class="rounded-3" height="150" width="100"/>
+                     <h5>${x.nombre}</h5>
+                     <p>Precio:${x.precio}</p>
+                     <p>Sexo:${x.sexo}</p>
+                     <button id="${x.id}" class="btn btn-success agregar-carrito">Agregar al carrito</button>`;
     cards.appendChild(div);
   });
+  actualizarBotones(productosElegidos);
 }
 
 cargarProductos(productoEnLs);
@@ -104,3 +107,42 @@ botonCategoria.forEach((boton) => {
     }
   });
 });
+
+//funcion de mis botones agregar al carrito
+
+function agregar(e) {
+  if (e.currentTarget) {
+    const productoId = e.currentTarget.id;
+
+    const productoSeleccionado = productoEnLs.find((x) => x.id == productoId);
+    const productoYaExiste = productosEnCarrito.find((x) => x.id == productoId);
+
+    if (productoYaExiste) {
+      console.log("el producto ya existe en el carrito");
+    } else {
+      //pusheo las cosas a mi array de carrito
+      productosEnCarrito.push(productoSeleccionado);
+      //guardo en local storage mi carrito
+      localStorage.setItem(
+        "productosEnCarrito",
+        JSON.stringify(productosEnCarrito)
+      );
+      actualizarNumero();
+    }
+  } else {
+    console.error("e.currentTarget es nulo o indefinido");
+  }
+}
+
+//NUMERO DEL CARRITO
+
+function actualizarNumero() {
+  const numero = productosEnCarrito.reduce(
+    (acumulador, x) => acumulador + x.cantidad,
+    0
+  );
+
+  numeroCarrito.innerText = ` ${numero}`;
+}
+
+actualizarNumero();
