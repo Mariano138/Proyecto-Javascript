@@ -119,6 +119,18 @@ function agregar(e) {
 
     if (productoYaExiste) {
       console.log("el producto ya existe en el carrito");
+      Toastify({
+        text: "Este producto ya existe en el carrito.",
+        duration: 1500,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "#242323",
+        },
+        onClick: function () {},
+      }).showToast();
     } else {
       //pusheo las cosas a mi array de carrito
       productosEnCarrito.push(productoSeleccionado);
@@ -127,6 +139,18 @@ function agregar(e) {
         "productosEnCarrito",
         JSON.stringify(productosEnCarrito)
       );
+      Toastify({
+        text: "Agregado al carrito",
+        duration: 1500,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "#242323",
+        },
+        onClick: function () {},
+      }).showToast();
       actualizarNumero();
     }
   } else {
