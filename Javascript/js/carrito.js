@@ -26,11 +26,22 @@ function borrarCarrito() {
 botonComprar.addEventListener("click", comprarCarrito);
 
 function comprarCarrito() {
-  productosEnCarrito = [];
+  Swal.fire({
+    title: "¿Desea confirmar la compra?",
+    showCancelButton: true,
+    confirmButtonText: "Comprar",
+    confirmButtonColor: "#198754",
+    cancelButtonText: "Cancelar",
+    cancelButtonColor: "#dc3545",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      productosEnCarrito = [];
 
-  localStorage.removeItem("productosEnCarrito");
+      localStorage.removeItem("productosEnCarrito");
 
-  agradecimiento();
+      agradecimiento();
+    }
+  });
 }
 
 //
@@ -63,6 +74,22 @@ function botonesComprarEliminar() {
     eliminarComprar.classList.add("d-none");
     cuerpoCarrito.classList.add("d-none");
     mensajeCarrito.classList.remove("d-none");
+
+    //TOASTIFY
+    Toastify({
+      text: "Carrito vacio.",
+      duration: 1500,
+      destination: "./index.html",
+      newWindow: false,
+      close: true,
+      gravity: "top",
+      position: "right",
+      stopOnFocus: true,
+      style: {
+        background: "#d90429",
+      },
+      onClick: function () {},
+    }).showToast();
   }
 }
 botonesComprarEliminar();
@@ -86,6 +113,21 @@ botonEliminar.forEach((boton) => {
       // Elimino el producto del array utilizando splice
       productosEnCarrito.splice(indiceAEliminar, 1);
       calcularTotal();
+
+      //TOASTIFY
+
+      Toastify({
+        text: "Producto eliminado.",
+        duration: 1500,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "#d90429",
+        },
+        onClick: function () {},
+      }).showToast();
 
       // Actualizo el localStorage con el nuevo array de productosEnCarrito
       localStorage.setItem(
